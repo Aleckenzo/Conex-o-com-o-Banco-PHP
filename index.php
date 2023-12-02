@@ -7,6 +7,8 @@
     
         $sql = mysqli_query($conn, "INSERT INTO dados (nome, email) VALUES ('$nome', '$email')");
     }
+    // Fecha a conexão com o banco de dados
+    $conn->close();
 ?>
 
 
